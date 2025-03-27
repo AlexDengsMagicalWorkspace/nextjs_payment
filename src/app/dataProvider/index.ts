@@ -15,7 +15,8 @@ export default (type: string) => {
     const dataProviderWithGeneratedData = new Proxy(defaultDataProvider, {
         get(_, name) {
             if (name === 'supportAbortSignal') {
-                return import.meta.env.MODE === 'production';
+                // return import.meta.env.MODE === 'production';
+                return process.env.NODE_ENV === 'production';
             }
             return (resource: string, params: any) => {
                 return dataProviderPromise.then(dataProvider => {

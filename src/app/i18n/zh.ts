@@ -25,9 +25,9 @@ const customEnglishMessages: TranslationMessages = {
                 items: 'by %{customer_name}, one item |||| by %{customer_name}, %{nb_items} items',
             },
             welcome: {
-                title: 'Welcome to the Alex Deng React.js && Next.js e-commerce',
+                title: '欢迎来到 Alex Deng 的 react && nextjs电子商务演示',
                 subtitle:
-                    "Feel free to explore and modify the data - it's local to your computer, and will reset each time you reload.",
+                    "请随意浏览和修改数据 - 这些数据保存在您的计算机本地，每次重新加载时都会重置。",
                 ra_button: 'react-admin site',
                 demo_button: 'Source for this demo',
             },
