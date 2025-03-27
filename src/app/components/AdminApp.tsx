@@ -1,10 +1,14 @@
 import { Admin, Resource, ListGuesser, EditGuesser } from "react-admin";
 import jsonServerProvider from "ra-data-json-server";
+import { Dashboard } from '@/app/dashboard';
 
 const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
 
 const AdminApp = () => (
-  <Admin dataProvider={dataProvider}>
+  <Admin 
+    dataProvider={dataProvider}
+    dashboard={Dashboard}
+  >
     <Resource
       name="users"
       list={ListGuesser}
