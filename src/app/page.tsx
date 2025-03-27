@@ -1,9 +1,9 @@
-import React from 'react';
-import { Flex } from 'antd';
-const Home: React.FC = () => (
-  <Flex gap="middle" wrap>
-   Nextjs Home Page
-  </Flex>
-);
+
+"use client";
+import { NextPage } from "next";
+import dynamic from "next/dynamic";
+const AdminApp = dynamic(() => import("@/app/components/AdminApp"), { ssr: false });
+
+const Home: NextPage = () => <AdminApp />;
 
 export default Home;
